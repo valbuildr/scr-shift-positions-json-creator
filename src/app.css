@@ -1,0 +1,135 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-qd-50: #fdf3f3;
+    --color-qd-100: #fde4e3;
+    --color-qd-200: #fccdcc;
+    --color-qd-300: #f8aba9;
+    --color-qd-400: #f27977;
+    --color-qd-500: #e84e4b;
+    --color-qd-600: #d84340; /* */
+    --color-qd-700: #b22623;
+    --color-qd-800: #942220;
+    --color-qd-900: #7b2321;
+    --color-qd-950: #420e0d;
+
+    --color-ds-50: #fef8ee;
+    --color-ds-100: #fcefd8;
+    --color-ds-200: #f9dbaf;
+    --color-ds-300: #f4c07d;
+    --color-ds-400: #ef9b48;
+    --color-ds-500: #eb842d; /* */
+    --color-ds-600: #dc661a;
+    --color-ds-700: #b64e18;
+    --color-ds-800: #913e1b;
+    --color-ds-900: #753419;
+    --color-ds-950: #3f190b;
+
+    --color-gd-50: #fdfae9;
+    --color-gd-100: #faf4c7;
+    --color-gd-200: #f6e692;
+    --color-gd-300: #f1d253;
+    --color-gd-400: #ebbc25; /* */
+    --color-gd-500: #dba417;
+    --color-gd-600: #bd7f11;
+    --color-gd-700: #975b11;
+    --color-gd-800: #7d4916;
+    --color-gd-900: #6b3c18;
+    --color-gd-950: #3e1f0a;
+
+    --color-sg-50: #ecfdf6;
+    --color-sg-100: #d2f9e8;
+    --color-sg-200: #a8f2d5;
+    --color-sg-300: #70e5bf;
+    --color-sg-400: #37d0a3;
+    --color-sg-500: #12af86; /* */
+    --color-sg-600: #079472;
+    --color-sg-700: #06765e;
+    --color-sg-800: #075e4b;
+    --color-sg-900: #074d3f;
+    --color-sg-950: #032b25;
+
+    --color-sv-50: #effefb;
+    --color-sv-100: #c9fef7;
+    --color-sv-200: #94fbf1;
+    --color-sv-300: #56f2e8;
+    --color-sv-400: #21d6d1; /* */
+    --color-sv-500: #0bc1bf;
+    --color-sv-600: #06999b;
+    --color-sv-700: #097a7c;
+    --color-sv-800: #0d5f62;
+    --color-sv-900: #104f51;
+    --color-sv-950: #022d31;
+
+    --color-qd: var(--color-qd-600);
+    --color-ds: var(--color-ds-500);
+    --color-gd: var(--color-gd-400);
+    --color-sg: var(--color-sg-500);
+    --color-sv: var(--color-sv-400);
+
+    --color-airlink-50: #fef7ee;
+    --color-airlink-100: #fcedd8;
+    --color-airlink-200: #f9d6af;
+    --color-airlink-300: #f4b97d;
+    --color-airlink-400: #ef9148;
+    --color-airlink-500: #ec7d33;
+    --color-airlink-600: #dc5a1a;
+    --color-airlink-700: #b64418;
+    --color-airlink-800: #91371b;
+    --color-airlink-900: #752f19;
+    --color-airlink-950: #3f150b;
+
+    --color-connect-50: #eff8ff;
+    --color-connect-100: #def0ff;
+    --color-connect-200: #b6e3ff;
+    --color-connect-300: #75ceff;
+    --color-connect-400: #2cb5ff;
+    --color-connect-500: #0096ee;
+    --color-connect-600: #007bd4;
+    --color-connect-700: #0062ab;
+    --color-connect-800: #00538d;
+    --color-connect-900: #064574;
+    --color-connect-950: #042c4d;
+
+    --color-express-50: #fff0f9;
+    --color-express-100: #ffe3f6;
+    --color-express-200: #ffc6ec;
+    --color-express-300: #ff98db;
+    --color-express-400: #ff58c1;
+    --color-express-500: #ff27a5;
+    --color-express-600: #ff0080;
+    --color-express-700: #df0064;
+    --color-express-800: #b80053;
+    --color-express-900: #980348;
+    --color-express-950: #5f0026;
+
+    --color-waterline-50: #f6f7f9;
+    --color-waterline-100: #edeef1;
+    --color-waterline-200: #d6dbe1;
+    --color-waterline-300: #b2bcc7;
+    --color-waterline-400: #8898a8;
+    --color-waterline-500: #6a7b8d;
+    --color-waterline-600: #556474;
+    --color-waterline-700: #495564;
+    --color-waterline-800: #3c4550;
+    --color-waterline-900: #353c45;
+    --color-waterline-950: #23282e;
+
+    --color-metro-50: #fef2f2;
+    --color-metro-100: #fee2e3;
+    --color-metro-200: #fecacb;
+    --color-metro-300: #fca5a7;
+    --color-metro-400: #f87174;
+    --color-metro-500: #ee4044;
+    --color-metro-600: #db272b;
+    --color-metro-700: #b81d21;
+    --color-metro-800: #991b1e;
+    --color-metro-900: #7f1d1f;
+    --color-metro-950: #450a0b;
+
+    --color-airlink: var(--color-airlink-500);
+    --color-connect: var(--color-connect-500);
+    --color-express: var(--color-express-600);
+    --color-waterline: var(--color-waterline-700);
+    --color-metro: var(--color-metro-500);
+}
