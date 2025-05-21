@@ -1,26 +1,26 @@
 export enum Operator {
-  Airlink,
-  Connect,
-  Express,
-  Waterline,
-  Metro,
-  NationalRail,
-  TransportForStepford,
+  Airlink = "Airlink",
+  Connect = "Connect",
+  Express = "Express",
+  Waterline = "Waterline",
+  Metro = "Metro",
+  NationalRail = "National Rail",
+  TransportForStepford = "Transport for Stepford",
 }
 
 export enum SignalZone {
-  A,
-  B,
-  C,
-  D,
-  E,
-  F,
-  G,
-  H,
-  J,
+  A = "A",
+  B = "B",
+  C = "C",
+  D = "D",
+  E = "E",
+  F = "F",
+  G = "G",
+  H = "H",
+  J = "J",
 }
 
-type RouteInfo = {
+export type RouteInfo = {
   operator: Operator;
   inboundDestination: string;
   inboundDepots?: string[];
@@ -912,11 +912,11 @@ export const routes: Record<string, RouteInfo> = {
   },
 };
 
-type StationInfo = {
+export type StationInfo = {
   name: string;
   operators: Operator[];
   managers: Operator[];
-  signalZone?: SignalZone[];
+  signalZone: SignalZone[];
   platforms: (string | number)[];
   dsGroups?: (string | number)[][];
 };
@@ -1550,5 +1550,59 @@ export const stations: Record<string, StationInfo> = {
     signalZone: [SignalZone.E],
     platforms: [1, 2, 3, 4],
     dsGroups: [[1, 2, 3, 4]],
+  },
+};
+
+export type SignalZoneInfo = {
+  name: string;
+  location: string;
+  locationStation: string;
+};
+
+export const signal_zones: Record<SignalZone, SignalZoneInfo> = {
+  [SignalZone.A]: {
+    name: "Stepford Zone/Willowfield Line/Whitefield Line",
+    location: "Stepford ROC",
+    locationStation: "Stepford Central",
+  },
+  [SignalZone.B]: {
+    name: "St Helens Bridge to Coxly/Beaulieu Park/Barton",
+    location: "Beaulieu Park Signal Box",
+    locationStation: "Beaulieu Park",
+  },
+  [SignalZone.C]: {
+    name: "Stepford Airport Zone/Benton Bridge",
+    location: "Airport ROC",
+    locationStation: "Stepford Airport Central",
+  },
+  [SignalZone.D]: {
+    name: "Morganstown to Leighton West/Airport Parkway Depot",
+    location: "Stepford ROC",
+    locationStation: "Stepford Central",
+  },
+  [SignalZone.E]: {
+    name: "Edgemead to Llyn-by-the-Sea",
+    location: "Llyn-by-the-Sea ROC",
+    locationStation: "Llyn-by-the-Sea",
+  },
+  [SignalZone.F]: {
+    name: "Benton Zone/Conolly Line/Greenslade Line/Newry Line",
+    location: "Benton Signal Box",
+    locationStation: "Benton",
+  },
+  [SignalZone.G]: {
+    name: "Farleigh Depot to Esterfield",
+    location: "Stepford ROC",
+    locationStation: "Stepford Central",
+  },
+  [SignalZone.H]: {
+    name: "Aslockby to Rayleigh Bay",
+    location: "Rayleigh Bay Signal Box",
+    locationStation: "Rayleigh Bay",
+  },
+  [SignalZone.J]: {
+    name: "Metro Core Section (Stepford Cetral to Stepford High Street)",
+    location: "High Street Signalling Centre",
+    locationStation: "Stepford High Street",
   },
 };
