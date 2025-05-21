@@ -1,30 +1,30 @@
 <script lang="ts">
-  import { routes } from "$lib";
+  import { Operator, routes } from "$lib";
 </script>
 
 <div class="p-8 bg-gray-800 text-white min-h-screen">
   {#each Object.entries(routes) as route}
     <div>
       <div class="flex items-center gap-3">
-        {#if route[1].operator == 0}
+        {#if route[1].operator == Operator.Airlink}
           <p class="text-2xl font-bold p-1.5 bg-airlink text-white rounded-md">
             {route[0]}
           </p>
-        {:else if route[1].operator == 1}
+        {:else if route[1].operator == Operator.Connect}
           <p class="text-2xl font-bold p-1.5 bg-connect text-white rounded-md">
             {route[0]}
           </p>
-        {:else if route[1].operator == 2}
+        {:else if route[1].operator == Operator.Express}
           <p class="text-2xl font-bold p-1.5 bg-express text-white rounded-md">
             {route[0]}
           </p>
-        {:else if route[1].operator == 3}
+        {:else if route[1].operator == Operator.Waterline}
           <p
             class="text-2xl font-bold p-1.5 bg-waterline text-white rounded-md"
           >
             {route[0]}
           </p>
-        {:else if route[1].operator == 4}
+        {:else if route[1].operator == Operator.Metro}
           <p class="text-2xl font-bold p-1.5 bg-metro text-white rounded-md">
             {route[0]}
           </p>
