@@ -1606,3 +1606,36 @@ export const signal_zones: Record<SignalZone, SignalZoneInfo> = {
     locationStation: "Stepford High Street",
   },
 };
+
+export type DriverPositionInfo = {
+  id: string;
+  route?: string;
+  depot?: string;
+  note?: string;
+  time?: string;
+};
+export type DispatcherPositionInfo = {
+  id: string;
+  station?: string;
+  platforms?: (string | number)[];
+  note?: string;
+  time?: string;
+};
+export type GuardPositionInfo = {
+  id: string;
+  train?: string;
+  player?: string;
+  note?: string;
+  time?: string;
+};
+export type SignallerPositionInfo = {
+  id: string;
+  zone?: string;
+  note?: string;
+  time?: string;
+};
+export type SupervisorPositionInfo = {
+  id: string;
+  note?: string;
+  time?: string;
+};
